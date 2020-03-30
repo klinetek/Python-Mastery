@@ -5,7 +5,7 @@ actual_guesses = 1
 print("I am going to guess your number. Think of a number between {} and {}".format(low, high))
 input("When youre ready, press the enter Key and Ill start.")
 
-while True:
+while low != high:
     guess = low + (high - low) // 2
     high_low = input("my guess is {}. Should i guess higher or lower?"
                      " Enter an H, L, or C if my guess was correct ". format(guess)).casefold()
