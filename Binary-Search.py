@@ -1,10 +1,9 @@
 low = 1
-high = 1000000
+high = 1000
 guess = 1
 actual_guesses = 1
-print("I am going to guess your number."
-     " Think of a number between {} and {}".format(low, high))
-input("When you're ready, press the ENTER Key and I'll start.")
+print("I am going to guess your number. Think of a number between {} and {}".format(low, high))
+input("When youre ready, press the enter Key and Ill start.")
 
 while True:
     guess = low + (high - low) // 2
