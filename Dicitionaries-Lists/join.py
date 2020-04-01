@@ -9,7 +9,7 @@ result as a for loop with a simple .join() command."""
 new_string = " mississippi, ".join(numbers)
 print(new_string)
 
-print("$" * 80)
+print("-" * 80)
 
 locations ={0: "you are sitting in front of a computer learning python",
             1: "you are standing at the end of a road before a small brick building",
@@ -27,9 +27,7 @@ exits =[{"Q": 0},
 
 loc = 1
 while True:
-    available_exits = ""
-    for direction in exits[loc].keys():
-        available_exits += direction + ", "
+    available_exits = ", ".join(exits[loc].keys())
     print(locations[loc])
 
     if loc == 0:
