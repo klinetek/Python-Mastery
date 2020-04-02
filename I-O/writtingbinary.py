@@ -17,3 +17,16 @@ with open("binary2", 'bw') as bin_file:
     bin_file.write(c.to_bytes(4, 'big'))
     bin_file.write(x.to_bytes(4, 'big'))
     bin_file.write(x.to_bytes(4, 'little'))
+"""you must pass the number of bytes used and the endings used for bytes you're trying
+to retrieve with your call."""
+with open("binary2", 'br') as bin_file:
+    e = int.from_bytes(bin_file.read(2), 'big')
+    print(e)
+    f = int.from_bytes(bin_file.read(2), 'big')
+    print(f)
+    g = int.from_bytes(bin_file.read(4), 'big')
+    print(g)
+    h = int.from_bytes(bin_file.read(4), 'big')
+    print(h)
+    i = int.from_bytes(bin_file.read(4), 'big')
+    print(i)
