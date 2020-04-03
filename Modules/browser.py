@@ -1,5 +1,3 @@
 import webbrowser
 
-webbrowser.open("https://www.python.org/") #this opens that webpage with default browser.
-
-help(webbrowser)
+webbrowser.open_new("https://www.python.org/")
