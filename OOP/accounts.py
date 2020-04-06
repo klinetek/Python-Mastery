@@ -1,5 +1,13 @@
+import datetime
+import pytz
+
 class Account:
     """ Simple account class with balance """
+
+    @staticmethod
+    def _current_time():
+        utc_time = datetime.datetime.utcnow()
+        return pytz.utc.localize(utc_time)
 
     def __init__(self, name, balance):
         self.name = name
